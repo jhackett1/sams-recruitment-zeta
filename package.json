@@ -2,17 +2,20 @@
   "name": "samaritans-volunteer-beta-revival",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",  
+  "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start"
+    "start": "NODE_ENV=production node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^6.2.0",
     "next": "^7.0.2",
     "react": "^16.6.3",
-    "react-dom": "^16.6.3"
+    "react-dom": "^16.6.3",
+    "react-scroll": "^1.7.10",
+    "request": "^2.88.0"
   }
 }
